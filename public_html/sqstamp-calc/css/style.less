@@ -1,0 +1,335 @@
+@border-grey: #dfdfdf;
+@main-text: #333;
+@main-white: #fff;
+@col-header: #1c2a52; //#556287;//#2aabd2;
+@gray-text: #b7b7b7;
+@color-red: #a94442;
+@color-red-hover: #8f1e0e;
+
+
+.noborder-hover{
+  border: none!important;
+}
+.stamp-item{
+  border: 1px solid @border-grey;
+  border-radius: 4px;
+  h2 {
+    text-align: center;
+    font-size: 26px;
+  }
+  .img-box{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: .5s ease;
+      opacity: .9;
+    }
+  }
+  &:hover{
+    .img-box{
+      img{
+        margin-top: -5%;
+        margin-left: -5%;
+        width: 110%;
+        transition: .5s ease;
+        opacity: 1;
+      }
+    }
+  }
+  .price-tbl{
+    width: 100%;
+    display: block;
+    position: relative;
+    .line-price{
+      margin: 10px auto;
+      display: flex;
+      width: 90%;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      border: 1px solid transparent;
+      padding-bottom: 10px;
+      .col-header{
+        width: 40%;
+        text-align: center;
+        color: @col-header;
+        margin: 0 auto;
+        background-color: @main-white;
+        text-align: center;
+        padding: 5px;
+        .header-txt{
+          font-size: 18px;
+        }
+        .comment{
+          font-style: italic;
+          font-size: 15px;
+        }
+      }
+      .line-header{
+        width: 100%!important;;
+        min-width: 100%!important;;
+        max-width: 100%!important;
+        margin: 0 auto;
+        margin-top: -10px;
+        text-align: center;
+        p.line-day, p.line-quick{
+          width: 50%;
+          margin: 0 auto;
+          border-radius: 5px;
+          border: 1px solid transparent;
+          background-color: @main-white;
+        }
+        p.line-day{
+          color: @gray-text;
+        }
+        p.line-quick{
+          color: @color-red;
+        }
+
+      }
+      .price-item{
+        cursor: pointer;
+        margin-top: 5px;
+        font-size: 16px;
+        color: @main-text;
+        text-align: center;
+        width: 45%;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .item-checked{
+        background-color: @col-header;
+        color: @main-white;
+
+      }
+
+      &:hover{
+        border: 1px solid @border-grey;
+        border-radius: 5px;
+        .line-header{
+          p.line-day, p.line-quick{
+            border: 1px solid @border-grey;
+          }
+          p.line-day{
+            color: @main-text;
+          }
+          p.line-quick{
+            color: @color-red-hover;
+          }
+        }
+
+      }
+    }
+  }
+
+  .amount-order{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+    .input-block-qty{
+      width: 100px;
+      .input-group{
+        margin-top: 20px;
+        input {
+          padding-left: 0;
+          padding-right: 0;
+          text-align: center;
+        }
+      }
+    }
+    .amount-block{
+      width: calc(100% - 110px);
+      text-align: right;
+      padding-bottom: 20px;
+      padding-top: 5px;
+      .amount-total{
+        color: @color-red;
+        font-size: 40px;
+      }
+      .suffix{
+        font-size: 16px;
+        color: @gray-text;
+      }
+    }
+  }
+  .button-block{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    a.btn {
+      min-width: 70%;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  }
+
+}
+#sqstamp-img{
+  min-width: 10px;
+  min-height: 10px;
+  //border: 2px solid navy;
+  p{
+    color: navy;
+  }
+
+}
+.sqstamp-item{
+
+  .amount-order{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-start;
+    .input-block-qty{
+      width: 100px;
+      .input-group{
+        margin-top: 20px;
+        input {
+          padding-left: 0;
+          padding-right: 0;
+          text-align: center;
+        }
+      }
+    }
+    .amount-block{
+      width: calc(100% - 110px);
+      text-align: right;
+      padding-bottom: 20px;
+      padding-top: 5px;
+      .amount-total{
+        color: @color-red;
+        font-size: 40px;
+      }
+      .suffix{
+        font-size: 16px;
+        color: @gray-text;
+      }
+    }
+  }
+  .button-block{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    a.btn {
+      min-width: 170px;
+      min-width: 270px;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  }
+  .sqstamp-img{
+    //overflow: hidden;
+    padding: 5px;
+    svg{
+      max-width: 100%;
+      height: auto;
+      text-align: center;
+      display: block;
+      position: relative;
+      margin: 10px auto;
+      text {
+        text-align: center;
+      }
+      rect{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .stamp-vslider{
+    display: flex;
+    justify-content: flex-start;
+    .vslider{
+      max-width: 40px;
+      //width: 40px;
+      //min-width: 30px;
+      height: 250px;
+    }
+    .sqstamp-img {
+      width: calc(100% - 50px);
+    }
+  }
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+  background-color: @col-header;
+}
+.stamps-carousel{
+  //margin-top: 50px;
+  position: relative;
+  .owl-nav{
+    margin-top: 0!important;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    button{
+      width: 40%!important;
+    }
+    .owl-prev,.owl-next{
+      display: block;
+      position: absolute;
+      top:-40px;
+      height: 30px;
+      width: 100%;
+      text-align: center;
+      border-radius: 0;
+      &:hover{
+        background-color: rgba(0, 92, 255, 0.5);
+      }
+    }
+    .owl-prev{
+      left:0px
+
+    }
+    .owl-next{
+      right:0px
+    }
+  }
+}
+
+.owl-slider-container{
+  @media (min-width: 400px){
+    width: 360px;
+    margin: 0 auto;
+  }
+  @media (max-width: 399px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.field-data{
+  margin-bottom: 15px;
+}
+.modal  {
+  .container-fluid {
+    textarea{
+      resize: none;
+      height: 80px;
+    }
+  }
+  .error-info{
+    text-align: center;
+    h2 {
+      font-size: 20px;
+      color: @col-header;
+    }
+    p{
+      font-size: 18px;
+      color: @color-red;
+    }
+  }
+
+}
+
+.border-danger{
+  border: 1px dashed orangered;
+}
+.display-none{
+  display: none;
+}

@@ -1,0 +1,301 @@
+.noborder-hover {
+  border: none!important;
+}
+.stamp-item {
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+}
+.stamp-item h2 {
+  text-align: center;
+  font-size: 26px;
+}
+.stamp-item .img-box {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.stamp-item .img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: .5s ease;
+  opacity: .9;
+}
+.stamp-item:hover .img-box img {
+  margin-top: -5%;
+  margin-left: -5%;
+  width: 110%;
+  transition: .5s ease;
+  opacity: 1;
+}
+.stamp-item .price-tbl {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.stamp-item .price-tbl .line-price {
+  margin: 10px auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid transparent;
+  padding-bottom: 10px;
+}
+.stamp-item .price-tbl .line-price .col-header {
+  width: 40%;
+  color: #1c2a52;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 5px;
+}
+.stamp-item .price-tbl .line-price .col-header .header-txt {
+  font-size: 18px;
+}
+.stamp-item .price-tbl .line-price .col-header .comment {
+  font-style: italic;
+  font-size: 15px;
+}
+.stamp-item .price-tbl .line-price .line-header {
+  width: 100%!important;
+  min-width: 100%!important;
+  max-width: 100%!important;
+  margin: 0 auto;
+  margin-top: -10px;
+  text-align: center;
+}
+.stamp-item .price-tbl .line-price .line-header p.line-day,
+.stamp-item .price-tbl .line-price .line-header p.line-quick {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+.stamp-item .price-tbl .line-price .line-header p.line-day {
+  color: #b7b7b7;
+}
+.stamp-item .price-tbl .line-price .line-header p.line-quick {
+  color: #a94442;
+}
+.stamp-item .price-tbl .line-price .price-item {
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  width: 45%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.stamp-item .price-tbl .line-price .item-checked {
+  background-color: #1c2a52;
+  color: #fff;
+}
+.stamp-item .price-tbl .line-price:hover {
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+}
+.stamp-item .price-tbl .line-price:hover .line-header p.line-day,
+.stamp-item .price-tbl .line-price:hover .line-header p.line-quick {
+  border: 1px solid #dfdfdf;
+}
+.stamp-item .price-tbl .line-price:hover .line-header p.line-day {
+  color: #333;
+}
+.stamp-item .price-tbl .line-price:hover .line-header p.line-quick {
+  color: #8f1e0e;
+}
+.stamp-item .amount-order {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.stamp-item .amount-order .input-block-qty {
+  width: 100px;
+}
+.stamp-item .amount-order .input-block-qty .input-group {
+  margin-top: 20px;
+}
+.stamp-item .amount-order .input-block-qty .input-group input {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.stamp-item .amount-order .amount-block {
+  width: calc(100% - 110px);
+  text-align: right;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+.stamp-item .amount-order .amount-block .amount-total {
+  color: #a94442;
+  font-size: 40px;
+}
+.stamp-item .amount-order .amount-block .suffix {
+  font-size: 16px;
+  color: #b7b7b7;
+}
+.stamp-item .button-block {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+.stamp-item .button-block a.btn {
+  min-width: 70%;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+#sqstamp-img {
+  min-width: 10px;
+  min-height: 10px;
+}
+#sqstamp-img p {
+  color: navy;
+}
+.sqstamp-item .amount-order {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.sqstamp-item .amount-order .input-block-qty {
+  width: 100px;
+}
+.sqstamp-item .amount-order .input-block-qty .input-group {
+  margin-top: 20px;
+}
+.sqstamp-item .amount-order .input-block-qty .input-group input {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.sqstamp-item .amount-order .amount-block {
+  width: calc(100% - 110px);
+  text-align: right;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+.sqstamp-item .amount-order .amount-block .amount-total {
+  color: #a94442;
+  font-size: 40px;
+}
+.sqstamp-item .amount-order .amount-block .suffix {
+  font-size: 16px;
+  color: #b7b7b7;
+}
+.sqstamp-item .button-block {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+.sqstamp-item .button-block a.btn {
+  min-width: 170px;
+  min-width: 270px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.sqstamp-item .sqstamp-img {
+  padding: 5px;
+}
+.sqstamp-item .sqstamp-img svg {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin: 10px auto;
+}
+.sqstamp-item .sqstamp-img svg text {
+  text-align: center;
+}
+.sqstamp-item .sqstamp-img svg rect {
+  width: 100%;
+  height: 100%;
+}
+.sqstamp-item .stamp-vslider {
+  display: flex;
+  justify-content: flex-start;
+}
+.sqstamp-item .stamp-vslider .vslider {
+  max-width: 40px;
+  height: 250px;
+}
+.sqstamp-item .stamp-vslider .sqstamp-img {
+  width: calc(100% - 50px);
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #1c2a52;
+}
+.stamps-carousel {
+  position: relative;
+}
+.stamps-carousel .owl-nav {
+  margin-top: 0!important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.stamps-carousel .owl-nav button {
+  width: 40%!important;
+}
+.stamps-carousel .owl-nav .owl-prev,
+.stamps-carousel .owl-nav .owl-next {
+  display: block;
+  position: absolute;
+  top: -40px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+}
+.stamps-carousel .owl-nav .owl-prev:hover,
+.stamps-carousel .owl-nav .owl-next:hover {
+  background-color: rgba(0, 92, 255, 0.5);
+}
+.stamps-carousel .owl-nav .owl-prev {
+  left: 0px;
+}
+.stamps-carousel .owl-nav .owl-next {
+  right: 0px;
+}
+@media (min-width: 400px) {
+  .owl-slider-container {
+    width: 360px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 399px) {
+  .owl-slider-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.field-data {
+  margin-bottom: 15px;
+}
+.modal .container-fluid textarea {
+  resize: none;
+  height: 80px;
+}
+.modal .error-info {
+  text-align: center;
+}
+.modal .error-info h2 {
+  font-size: 20px;
+  color: #1c2a52;
+}
+.modal .error-info p {
+  font-size: 18px;
+  color: #a94442;
+}
+.border-danger {
+  border: 1px dashed orangered;
+}
+.display-none {
+  display: none;
+}
